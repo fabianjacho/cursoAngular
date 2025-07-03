@@ -1,0 +1,32 @@
+
+
+<main class="main">
+  <div class="content">
+    <div class="left-side">
+      <h1>Hola , {{ title }}</h1>
+      <p>Ejercicio de Lista. 🎉</p>
+
+      <input [(ngModel)]="item" placeholder="Escribe algo" />
+        <button (click)="anadir()">Añadir</button>
+
+        @for(item of lista1; track lista1.id) {
+          <ul class="lista1">   
+            <li>{{ item.id }}</li>
+            <li>{{ item.nombre }}</li>
+            <li></li>
+          </ul> 
+        }
+       
+       <!-- <ul>
+          <li *ngFor="let elemento of lista1">{{ elemento }}</li>
+        </ul>-->
+
+        
+
+        <!--<button (click)="eliminar(i)" *ngFor="let elemento of lista; let i = index">Eliminar</button>-->
+
+    </div>
+  </div>
+</main>
+
+<router-outlet />
