@@ -6,19 +6,6 @@
       <h1> {{ title }}</h1>
 
       <input [(ngModel)]="item" placeholder="Escribe algo" />
-      
-      <!--
-      <button (click)="anadir()">Añadir</button>
-        
-
-        <ul class="lista1" *ngFor="let item of lista1; trackBy: trackById">
-          <li>{{ item.id }}</li>
-          <li>{{ item.nombre }}</li>
-          <li>
-            <button (click)="remover(item.id)">Eliminar</button>
-          </li>
-        </ul>-->
-
 
       <app-lista 
           [item]="item"

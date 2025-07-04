@@ -1,2 +1,10 @@
 
-<button (click)="enviarAlPadre()">enviar al hijo</button>
+<button (click)="anadir()">enviar al hijo</button>
+
+<ul class="lista1" *ngFor="let item of lista1; let i = index">
+    <li>{{ item.id }}</li>
+    <li>{{ item.nombre }}</li>
+    <li>
+    <button (click)="remover(item.id)">Eliminar</button>
+    </li>
+</ul>
